@@ -1,18 +1,17 @@
 # My portfolio
 
 ## Table of contents
-- [Semester 3](#Semester-3)
-	- [Learning outcomes](#Learning-outcomes)
-		- [Web application](#Web-application)
-		- [Software quality](#Software-quality)
-		- [CI/CD](#CI-CD)
-		- [Professional](#Professional)
-		- [Agile method](#Agile-method)
-		- [Business processes](#Business-processes)
-		- [Requirements and Design](#Requirements-and-Design)
-		- [Cultural differences and ethics](#Cultural-differences-and-ethics)
-	- [Research](#Research)
-	- [Reflection](#Reflection)
+<!-- - [Semester 3](#Semester-3) -->
+- [Learning outcomes](#Learning-outcomes)
+  - [Web application](#Web-application)
+  - [Software quality](#Software-quality)
+  - [CI/CD](#CI-CD)
+  - [Professional](#Professional)
+  - [Agile method](#Agile-method)
+  - [Business processes](#Business-processes)
+  - [Requirements and Design](#Requirements-and-Design)
+  - [Cultural differences and ethics](#Cultural-differences-and-ethics)
+- [Reflection](#Reflection)
 
 
 <!-- ![container-diagram](out/diagrams/container/C4_Elements.png) -->
