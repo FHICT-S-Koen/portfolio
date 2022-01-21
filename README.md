@@ -106,15 +106,45 @@ After this the workflows are pretty much the same only the --build-args are diff
     run: heroku container:release -a ${{ secrets.HEROKU_APP }} web
 ```
 
-<!-- files: [client-pipeline](.github/workflows/client-pipeline.yml), [map-service-pipeline](.github/workflows/map-pipeline.yml), [notes-service-pipeline](.github/workflows/notes-pipeline.yml) -->
+files: [client-pipeline](code/ip/.github/workflows/client-pipeline.yml), [map-service-pipeline](code/ip/.github/workflows/map-pipeline.yml), [notes-service-pipeline](code/ip/.github/workflows/notes-pipeline.yml), [discovery-server-pipeline](code/ip/.github/workflows/discovery-server-pipeline.yml), [gateway-pipeline](code/ip/.github/workflows/gateway-pipeline.yml)
 
 **Dockerfiles**
 
 As for my dockerfiles they're completely different to each other. My client and map-service both use just a single stage, which means that those final images are quite large and less secure, because there's a lot more tooling available on them. For my notes-service dockerfile I made use of a multistage process. First I get a base image with all the necessary tooling to build my app, and then I pull a new image which is very small. Then I copy everything over that's needed to run the application and start the application from ENTRYPOINT, because using CMD won't work without a shell.
 
-<!-- files: [client-dockerfile](client/dockerfile), [map-service-dockerfile](map-service/dockerfile), [notes-service-dockerfile](notes-service/dockerfile) -->
+files: [client-dockerfile](code/ip/client/dockerfile), [map-service-dockerfile](code/ip/map-service/dockerfile), [notes-service-dockerfile](code/ip/notes-service/dockerfile),
+[discovery-server-dockerfile](code/ip/discovery-server/dockerfile),
+[gateway-dockerfile](code/ip/gateway/dockerfile)
 
 ### Professional
+
+**Feedback**
+
+
+
+**Research**
+
+For my other research you can find it here: [agile.md](research/agile.md)
+
+I did the following research (for security) for my IP and it can be found here: [secure-docker-container.md](research/secure-docker-container.md)
+
+For my other research you can find it here: [making-web-based-apps-faster.md](research/making-web-based-apps-faster.md)
+
+**Project management**
+
+I started of with project management in Jira, because I thought having proper sprints, a backlog and add-ons that can help with making stories like story mapping tools. Were going to be a superior experience to GitHub Projects. But after quite some time in Jira, and having to deal with constant switching between places like Jira, confluence and GitHub made want to try GitHub projects. After moving all my stories over I realized how much nicer it is to have everything in one place and that those features weren't really a necessity.
+
+I started of with making a project board with the following columns: Backlog, To Do, In Progress, Definition of Done and Done. Then I made labels for my user stories, epics and sprints, as you can see below. 
+
+![project-board](assets/project-board.png)
+
+I also compiled a list of criteria (my definition of done) which each story has to obey. 
+
+![definition-of-done](assets/definition-of-done.png)
+
+After that I started writing acceptance criteria for my first story and test cases. I also while implementing started adding a todo list, which you can all find in my user story description.
+
+![story-description](assets/story-description.png)
 
 ### Agile-method
 
