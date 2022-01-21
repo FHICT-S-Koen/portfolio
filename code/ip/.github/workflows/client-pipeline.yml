@@ -1,0 +1,69 @@
+name: client CI/CD
+
+on:
+  pull_request:
+    branches: production
+    paths:
+      - 'client/**'
+defaults: 
+  run: 
+    working-directory: client
+
+jobs: 
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v2
+        with: 
+          node-version: 12
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        with:
+          args: >
+            -Dsonar.organization=fhict-s-koen
+            -Dsonar.projectKey=fhict-s-koen_info-map_client
+            -Dsonar.sources=./client
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN_CLIENT }}
+      
+      # - name: Install node-modules
+      #   run: npm ci
+
+      # - name: Test
+      #   run: npm test
+
+      # - name: Build
+      #   run: npm build
+
+  # deploy:
+  #   runs-on: ubuntu-latest
+  #   needs: build
+  #   steps:
+      - name: Build Docker image
+        run: docker build -t registry.heroku.com/${{ secrets.CLIENT_HEROKU_APP }}/web:latest 
+              --build-arg REACT_APP_PROXY_URL=${{ secrets.REACT_APP_PROXY_URL }} 
+              --build-arg REACT_APP_AUTH0_DOMAIN=${{ secrets.INFO_MAP_AUTH0_DOMAIN }} 
+              --build-arg REACT_APP_AUTH0_CLIENT_KEY=${{ secrets.REACT_APP_AUTH0_CLIENT_KEY }} 
+              --build-arg REACT_APP_AUTH0_AUDIENCE=${{ secrets.INFO_MAP_AUTH0_AUDIENCE }} .
+        
+      - name: Docker image info
+        run: docker images
+
+      - name: Login to container registry
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        run: heroku container:login
+
+      - name: Push Docker image
+        run: docker push registry.heroku.com/${{ secrets.CLIENT_HEROKU_APP }}/web
+      
+      - name: Release
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        run: heroku container:release -a ${{ secrets.CLIENT_HEROKU_APP }} web
