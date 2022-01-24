@@ -3,16 +3,16 @@
 ## Table of contents
 - [Learning outcomes](#Learning-outcomes)
   - [Individual project](#Individual-project)
-    - [Web application](#Web-application(IP))
+    - [Web application](#Web-application_IP)
     - [Software quality](#Software-quality)
     - [CI/CD](#CI-CD)
-    - [Professional](#Professional(IP))
+    - [Professional](#Professional_IP)
   - [Group project](#Group-project)
     - [Agile method](#Agile-method)
     - [Business processes](#Business-processes)
     - [Requirements and Design](#Requirements-and-Design)
     - [Cultural differences and ethics](#Cultural-differences-and-ethics)
-    - [Professional](#Professional(GP))
+    - [Professional](#Professional_GP)
     - [Web application](#Web-application)
 - [Reflection](#Reflection)
 
@@ -20,7 +20,7 @@
 
 ### Individual-project
 
-#### Web-application(IP)
+#### Web-application
 
 I made the following diagram to show how my project architecture was going to look.
 
@@ -127,7 +127,7 @@ files: [client-dockerfile](code/ip/client/dockerfile), [map-service-dockerfile](
 [discovery-server-dockerfile](code/ip/discovery-server/dockerfile),
 [gateway-dockerfile](code/ip/gateway/dockerfile)
 
-#### Professional(IP)
+#### Professional_IP
 
 **Feedback**
 
@@ -204,8 +204,8 @@ I did the following business process research you can find it at the following l
 
 #### Cultural-differences-and-ethics
 
-#### Professional(GP)
+#### Professional_GP
 
-#### Web-application(GP)
+#### Web-application
 
 ## Reflection
