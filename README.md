@@ -178,6 +178,9 @@ Were thinking of adding points or a time estimate to the subtasks. But ultimatel
 
 ### Business-processes
 
+I did the following business process research you can find at the following link:
+[Business process](research/business-process.md)
+
 ### Requirements-and-Design
 
 ### Cultural-differences-and-ethics
