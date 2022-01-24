@@ -13,14 +13,20 @@
   - [Cultural differences and ethics](#Cultural-differences-and-ethics)
 - [Reflection](#Reflection)
 
-
-<!-- ![container-diagram](out/diagrams/container/C4_Elements.png) -->
-
 ## Learning-outcomes
 
 ### Web-application
 
+I made the following diagram to show how my project architecture was going to look.
+
+![container-diagram](code/ip/out/diagrams/container/C4_Elements.png)
+One important thing to note right now is that security is being controlled by the micro-services instead of the gateway.
+
 ### Software-quality
+
+I wrote the following test for my map-service: [tests](code/ip/map-service/src/test)
+
+![passing-tests](assets/passing-tests.png)
 
 ### CI-CD
 
