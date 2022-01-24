@@ -13,14 +13,14 @@
     - [Requirements and Design](#Requirements-and-Design)
     - [Cultural differences and ethics](#Cultural-differences-and-ethics)
     - [Professional](#Professional_GP)
-    - [Web application](#Web-application)
+    - [Web application](#Web-application_GP)
 - [Reflection](#Reflection)
 
 ## Learning-outcomes
 
 ### Individual-project
 
-#### Web-application
+#### Web-application_IP
 
 I made the following diagram to show how my project architecture was going to look.
 
@@ -206,6 +206,6 @@ I did the following business process research you can find it at the following l
 
 #### Professional_GP
 
-#### Web-application
+#### Web-application_GP
 
 ## Reflection
