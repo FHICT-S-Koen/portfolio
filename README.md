@@ -1,34 +1,39 @@
 # My portfolio
 
 ## Table of contents
-<!-- - [Semester 3](#Semester-3) -->
 - [Learning outcomes](#Learning-outcomes)
-  - [Web application](#Web-application)
-  - [Software quality](#Software-quality)
-  - [CI/CD](#CI-CD)
-  - [Professional](#Professional)
-  - [Agile method](#Agile-method)
-  - [Business processes](#Business-processes)
-  - [Requirements and Design](#Requirements-and-Design)
-  - [Cultural differences and ethics](#Cultural-differences-and-ethics)
+  - [Individual project](#Individual-project)
+    - [Web application](#Web-application(IP))
+    - [Software quality](#Software-quality)
+    - [CI/CD](#CI-CD)
+    - [Professional](#Professional(IP))
+  - [Group project](#Group-project)
+    - [Agile method](#Agile-method)
+    - [Business processes](#Business-processes)
+    - [Requirements and Design](#Requirements-and-Design)
+    - [Cultural differences and ethics](#Cultural-differences-and-ethics)
+    - [Professional](#Professional(GP))
+    - [Web application](#Web-application)
 - [Reflection](#Reflection)
 
 ## Learning-outcomes
 
-### Web-application
+### Individual-project
+
+#### Web-application(IP)
 
 I made the following diagram to show how my project architecture was going to look.
 
 ![container-diagram](code/ip/out/diagrams/container/C4_Elements.png)
 One important thing to note right now is that security is being controlled by the micro-services instead of the gateway.
 
-### Software-quality
+#### Software-quality
 
 I wrote the following test for my map-service: [tests](code/ip/map-service/src/test)
 
 ![passing-tests](assets/passing-tests.png)
 
-### CI-CD
+#### CI-CD
 
 **GitHub actions**
 All of this projects workflows start like this. I set the workflow name and trigger it on a pull request to the production branch. I define a single job that both builds and deploys the application.
@@ -122,7 +127,7 @@ files: [client-dockerfile](code/ip/client/dockerfile), [map-service-dockerfile](
 [discovery-server-dockerfile](code/ip/discovery-server/dockerfile),
 [gateway-dockerfile](code/ip/gateway/dockerfile)
 
-### Professional
+#### Professional(IP)
 
 **Feedback**
 
@@ -152,9 +157,11 @@ After that I started writing acceptance criteria for my first story and test cas
 
 ![story-description](assets/story-description.png)
 
-### Agile-method
+### Group-project
 
-<!-- I started this semester with Agile research for the project plan chapter 1.4 (Strategy).
+#### Agile-method
+
+I started this semester with Agile research for the project plan chapter 1.4 (Strategy).
 
 _Here is our [strategy](research/agile.md)_
 
@@ -174,17 +181,31 @@ As you can see in the picture above on the right hand side you can see the story
 ![burn-down-chart](assets/burn-down-chart.png)
 
 Were thinking of adding points or a time estimate to the subtasks. But ultimately I think we need get some more research done into testing and UI/UX, so the stories obey the definition of done.
-<br> -->
+<br>
 
-### Business-processes
+#### Business-processes
 
-I did the following business process research you can find at the following link:
+I did the following business process research you can find it at the following link:
 [Business process](research/business-process.md)
 
-### Requirements-and-Design
+#### Requirements-and-Design
 
-### Cultural-differences-and-ethics
+#### You have contributed to the requirements collection and elicitation.
+
+    
+#### You have contributed to the translation of the requirements to User stories. 
+
+![architectural-design](assets/story-map.png)
+
+    
+#### You have contributed to the translation of the requirements to the project architecture and designs. 
+
+![architectural-design](assets/gp-architectural-design.png)
+
+#### Cultural-differences-and-ethics
+
+#### Professional(GP)
+
+#### Web-application(GP)
 
 ## Reflection
-
-

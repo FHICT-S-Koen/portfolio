@@ -1,0 +1,49 @@
+@startuml C4_Elements
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+LAYOUT_WITH_LEGEND()
+
+Person(brand, "Brand manager")
+Person(customer, "Customer")
+Person(staff, "Kitchen staff")
+
+System_Ext(identity, "Auth0 identity service", "Provides authtentication via JWT tokens.")
+
+System_Boundary(boundry, "Restaurant-management"){
+	Container(spa, "Single-Page Application", "Vue + TypeScript", "Provides the menu and editing the menu + order-, inventory-, session- and table management.")
+	
+	Container(gateway, "Gateway service", "Spring Webflux + Java", "Provides data to the front-end and controls authorization.")
+	
+	Container(discovery, "Discovery server", "Spring web + Java + Eureka", "Keeps track of registered services.")
+	
+	Container(restaurant_service, "Restaurant service", "Spring web + Java", "Retrieves the restaurant, inventory and table data.")
+	Container(menu_service, "Menu service", "Spring web + Java", "Retrieves the menu data.")
+	Container(session_service, "Session service", "Spring web + Java", "Retrieves the session and order data.")
+	Container(notification, "Notification service", "Spring web + Java", "Send incoming orders and notifcations to the client.")
+
+	ContainerDb(restaurant_db, "Database", "PostgreSQL", "Stores the restaurant, inventory and table data.")
+	ContainerDb(menu_db, "Database", "PostgreSQL", "Stores the menu data.")
+	ContainerDb(session_db, "Database", "PostgreSQL", "Stores the session and order data.")
+}
+
+Rel_D(customer, spa, "The customer uses the digital menu to order food.")
+Rel_D(staff, spa, "The kitchen staff uses the live view screen to see the incoming orders.")
+Rel_D(brand, spa, "Controls the white label of their restaurant chain.")
+
+Rel_D(spa, gateway, "Makes API calls to", "JSON/HTTPS")
+
+Rel_L(spa, identity, "Makes API calls to", "JSON/HTTPS")
+Rel_L(gateway, identity, "Makes API calls to", "JSON/HTTPS")
+
+Rel_L(notification, spa, "Sends messages to", "JSON/WSS")
+
+Rel_R(gateway, discovery, "Gets paths of registered services", "JSON/HTTPS")
+Rel_U(menu_service, discovery, "Registers to", "JSON/HTTPS")
+Rel_U(session_service, discovery, "Registers to", "JSON/HTTPS")
+Rel_U(restaurant_service, discovery, "Registers to", "JSON/HTTPS")
+Rel_D(notification, discovery, "Registers to", "JSON/HTTPS")
+
+Rel(restaurant_service, restaurant_db, "Retrieves restaurant data")
+Rel(menu_service, menu_db, "Retrieves menu data")
+Rel(session_service, session_db, "Retrieves session data")
+@enduml
