@@ -61,11 +61,11 @@ For communications in the group project I mainly focused on always talking engli
 ### What is ethics in software engineering?
 To understand what ethics are in software engineering. We should first answer what are ethics? As quoted by Potter Stewart<sup>[8](#Sources)</sup>:
 
-"Ethics is knowing the difference between what you have a right to do and what is right to do."
+> "Ethics is knowing the difference between what you have a right to do and what is right to do."
 
 Now what is ethics in software engineering? The following overview written by Gotterbarn, D. <sup>[9](#Sources)</sup> will explain what ethics in software engineering is.
 
-"Software engineering ethics can be approached from three directions. First, it can describe the activity of software engineers making practical choices that affect other people in significant ways. Second, it can be used to describe a collection of principles, guidelines, or ethical imperatives that guide or legislative action, and third, it can be used to name a discipline that studies the relationship between the other two senses of ethics. Software engineering ethics is clearly both an activity and a body of principles. The discipline of software engineering ethics that studies this activity and formalizes these principles, however, is in its infancy."
+> "Software engineering ethics can be approached from three directions. First, it can describe the activity of software engineers making practical choices that affect other people in significant ways. Second, it can be used to describe a collection of principles, guidelines, or ethical imperatives that guide or legislative action, and third, it can be used to name a discipline that studies the relationship between the other two senses of ethics. Software engineering ethics is clearly both an activity and a body of principles. The discipline of software engineering ethics that studies this activity and formalizes these principles, however, is in its infancy."
 
 ### Why is ethics important in software engineering? 
 Software can both have a positive and negative impact on peoples lives. It can negatively effect peoples lives by for example making them addicted to the software or crossing privacy guidelines. This is why the ethical aspects of software are so important.
