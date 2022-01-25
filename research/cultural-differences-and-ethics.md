@@ -60,12 +60,12 @@ For communications in the group project I mainly focused on always talking engli
 
 ### What is ethics in software engineering?
 To understand what ethics are in software engineering. We should first answer what are ethics? As quoted by Potter Stewart<sup>[8](#Sources)</sup>:
-    
-    "Ethics is knowing the difference between what you have a right to do and what is right to do."
+
+"Ethics is knowing the difference between what you have a right to do and what is right to do."
 
 Now what is ethics in software engineering? The following overview written by Gotterbarn, D. <sup>[9](#Sources)</sup> will explain what ethics in software engineering is.
 
-    "Software engineering ethics can be approached from three directions. First, it can describe the activity of software engineers making practical choices that affect other people in significant ways. Second, it can be used to describe a collection of principles, guidelines, or ethical imperatives that guide or legislative action, and third, it can be used to name a discipline that studies the relationship between the other two senses of ethics. Software engineering ethics is clearly both an activity and a body of principles. The discipline of software engineering ethics that studies this activity and formalizes these principles, however, is in its infancy."
+"Software engineering ethics can be approached from three directions. First, it can describe the activity of software engineers making practical choices that affect other people in significant ways. Second, it can be used to describe a collection of principles, guidelines, or ethical imperatives that guide or legislative action, and third, it can be used to name a discipline that studies the relationship between the other two senses of ethics. Software engineering ethics is clearly both an activity and a body of principles. The discipline of software engineering ethics that studies this activity and formalizes these principles, however, is in its infancy."
 
 ### Why is ethics important in software engineering? 
 Software can both have a positive and negative impact on peoples lives. It can negatively effect peoples lives by for example making them addicted to the software or crossing privacy guidelines. This is why the ethical aspects of software are so important.
@@ -73,21 +73,21 @@ Software can both have a positive and negative impact on peoples lives. It can n
 ### What do you have to do as a software engineer to address ethical aspects in your work?
 Software engineers should work in a professional manner by following 8 principles stated in the (Software Engineering Code of Ethics and Professional Practice) written by the ACM, summarized by Cast of Software <sup>[10](#Sources)</sup> :
 
-    1. PUBLIC – Software engineers shall act consistently with the public interest.
+1. PUBLIC – Software engineers shall act consistently with the public interest.
 
-    2. CLIENT AND EMPLOYER – Software engineers shall act in a manner that is in the best interests of their client and employer consistent with the public interest.
+2. CLIENT AND EMPLOYER – Software engineers shall act in a manner that is in the best interests of their client and employer consistent with the public interest.
 
-    3. PRODUCT – Software engineers shall ensure that their products and related modifications meet the highest professional standards possible.
+3. PRODUCT – Software engineers shall ensure that their products and related modifications meet the highest professional standards possible.
 
-    4. JUDGMENT – Software engineers shall maintain integrity and independence in their professional judgment.
+4. JUDGMENT – Software engineers shall maintain integrity and independence in their professional judgment.
 
-    5. MANAGEMENT – Software engineering managers and leaders shall subscribe to and promote an ethical approach to the management of software development and maintenance.
+5. MANAGEMENT – Software engineering managers and leaders shall subscribe to and promote an ethical approach to the management of software development and maintenance.
 
-    6. PROFESSION – Software engineers shall advance the integrity and reputation of the profession consistent with the public interest.
+6. PROFESSION – Software engineers shall advance the integrity and reputation of the profession consistent with the public interest.
 
-    7. COLLEAGUES – Software engineers shall be fair to and supportive of their colleagues.
+7. COLLEAGUES – Software engineers shall be fair to and supportive of their colleagues.
 
-    8. SELF – Software engineers shall participate in lifelong learning regarding the practice of their profession and shall promote an ethical approach to the practice of the profession.
+8. SELF – Software engineers shall participate in lifelong learning regarding the practice of their profession and shall promote an ethical approach to the practice of the profession.
 
 ### How do you know that your ethical considerations match with those of other software engineers? 
 Talk with other software engineers to confirm if your ethical considerations match and compare each others views on the ACM principles. When in a team setting it's a good idea to have such a discussion atleast once.
