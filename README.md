@@ -185,10 +185,21 @@ Were thinking of adding points or a time estimate to the subtasks. But ultimatel
 
 #### Business-processes
 
-I did the following business process research you can find it at the following link:
+For business processes I did the following research:
 [Business process](research/business-process.md)
 
 #### Requirements-and-Design
+
+### You have contributed to the requirements collection and elicitation.
+![non-functional-requirements](assets/nfrs.png)
+    
+### You have contributed to the translation of the requirements to User stories. 
+
+![story-map](assets/story-map.png)
+    
+### You have contributed to the translation of the requirements to the project architecture and designs. 
+
+![architectural-design](assets/gp-architectural-design.png)
 
 #### You have contributed to the requirements collection and elicitation.
 
@@ -204,8 +215,27 @@ I did the following business process research you can find it at the following l
 
 #### Cultural-differences-and-ethics
 
+For cultural differences and ethics I did the following research:
+[cultural differences and ethics](research/cultural-differences-and-ethics.md)
+
 #### Professional_GP
 
+**Group feedpulse**
+![gp-feedpulse-group](assets/gp-feedpulse-group.png)
+
+**individual feedpulse**
+![gp-feedpulse-individual](assets/gp-feedpulse-individual.png)
+
+**peer feedpulse**
+![gp-feedpulse-peer](assets/gp-feedpulse-peer.png)
+
 #### Web-application_GP
+
+In the following Jira issue from before you also can see that I created a POST endpoint in the menu-service for dishes. 
+![jira-issue](assets/jira-issue.png)
+
+I have also made the GET, PUT and DELETE endpoints for dishes within the menu-service. For the client I made service calls to those endpoints and with vue I made for instance the dish dialog component to create or update dishes.
+
+![dish-dialog](assets/dish-dialog.png)
 
 ## Reflection
